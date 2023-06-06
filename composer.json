@@ -1,0 +1,39 @@
+{
+    "name": "confrariaweb/laravel-acl",
+    "description": "laravel access control package - ACL",
+    "keywords": [
+        "acl",
+        "access control",
+        "acl",
+        "framework",
+        "laravel"
+    ],
+    "license": "MIT",
+    "type": "package",
+    "authors": [
+        {
+            "name": "Rafael Zingano",
+            "email": "confrariaweb@gmail.com"
+        }
+    ],
+    "require": {
+        "confrariaweb/laravel-user": "^1.0.0",
+        "staudenmeir/eloquent-has-many-deep": "^1.18"
+    },
+    "autoload": {
+        "psr-4": {
+            "ConfrariaWeb\\Acl\\": "src",
+            "ConfrariaWeb\\Acl\\Databases\\Seeds\\": "databases/Seeds"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "ConfrariaWeb\\Acl\\Providers\\AclRouteServiceProvider",
+                "ConfrariaWeb\\Acl\\Providers\\AclServiceProvider"
+            ]
+        }
+    },
+    "version": "1.0.0",
+    "minimum-stability": "stable"
+}
